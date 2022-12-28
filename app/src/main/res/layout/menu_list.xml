@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingTop="10dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="10dp"
+    android:layout_marginBottom="10sp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_menu_id"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#3C3C3C"
+            android:padding="10dp"
+            android:id="@+id/cons_inside">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/display_picture_menu_id"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:maxHeight="100dp"
+                android:src="@drawable/pizza_pepperoni"/>
+
+            <TextView
+                android:id="@+id/menu_title_id"
+                android:textAppearance="@style/font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:textSize="25sp"
+                android:hint="Pizza la originale"
+                android:textStyle="bold"
+                android:textColor="#ffff" />
+
+            <TextView
+                android:id="@+id/menu_desc_id"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_below="@+id/menu_title_id"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:hint="The authentic italian experience."
+                android:justificationMode="inter_word"
+                android:textStyle="bold"
+                android:textColor="#ffff" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

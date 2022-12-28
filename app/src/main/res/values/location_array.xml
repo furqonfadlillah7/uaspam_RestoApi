@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="location_array">
+        <item>Bandung</item>
+        <item>Jakarta</item>
+        <item>Bekasi</item>
+        <item>Cimahi</item>
+        <item>Purwakarta</item>
+    </string-array>
+</resources>
